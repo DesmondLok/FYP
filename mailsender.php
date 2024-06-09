@@ -38,8 +38,8 @@ try {
 
     $mail->send();
     echo 'Message has been sent';
-    header("Location: ../forum.php");
+    header("Location: https://fcsitevacuation.azurewebsites.net/forum.php");
 } catch (Exception $e) {
-    header("Location: ../forum.php?error=".$mail->ErrorInfo.".");
+    header("Location: https://fcsitevacuation.azurewebsites.net/forum.php/forum.php?error=".$mail->ErrorInfo.".");
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
