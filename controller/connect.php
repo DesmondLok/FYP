@@ -1,21 +1,21 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "evacuation_fyp";
+// $servername = "localhost";
+// $username = "root";
+// $password = "";
+// $dbname = "evacuation_fyp";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname );
+// // Create connection
+// $conn = new mysqli($servername, $username, $password, $dbname );
 
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-echo "
-    <script>
-        console.log('Database Connected successfully');
-    </script>
-";
+// // Check connection
+// if ($conn->connect_error) {
+//   die("Connection failed: " . $conn->connect_error);
+// }
+// echo "
+//     <script>
+//         console.log('Database Connected successfully');
+//     </script>
+// ";
 
 
 function getUsername($conn, $Uid){
@@ -26,5 +26,5 @@ function getUsername($conn, $Uid){
       return $row["Username"];
   }
 }
-
+?>
 
