@@ -1,20 +1,5 @@
 <?php include "header.php";?>
 
-<?php
-    $sql = " SELECT UID FROM user WHERE Email = 'a' ";
-    $result = $conn->query($sql);
-    if ($result->num_rows > 0) {
-        while($row = $result->fetch_assoc()) {
-            echo "
-                <script>
-                    console.log('" . $row["UID"]."');
-                </script>
-            ";
-        }
-        
-    }
-?>
-
 <div class="container-fluid  p-0">
     <!-- BACKGROUND -->
     <div class="loginBackground h-100 w-100 position-fixed "></div>
