@@ -1,0 +1,97 @@
+/* GENERAL */
+body{
+    background:#f0f0f0;
+}
+
+.nav-pills .nav-link.active{
+    background-color:#f0f0f0;
+    color: #0d6efd;
+}
+
+.nav-pills .nav-link{
+    background-color:#203162;
+    color: white;
+}
+
+.w-content{
+    width: fit-content;
+}
+
+.fw-6{
+    font-weight: 600;
+}
+
+.background-blue{
+    background-color:#203162 !important;
+}
+
+.pointer{
+    cursor:pointer
+}
+
+.fade:not(.show) {
+    opacity: 0;
+    z-index: -1;
+}
+
+/* index */
+.background{
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.background-blur{
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+}
+
+/*HEADER*/
+.navbar{
+    font-size:20px;
+    font-weight:500;
+}
+
+nav a{
+    color:#203162 !important;
+}
+
+nav a.active{
+    color:#CF152D !important;
+}
+
+/* PROCEDURE & GUIDELINE */
+.guidelineTable td{
+    width: 50%;
+}
+
+/* CONTACT */
+.comtactBackground{
+    background-image: url('img/background.jpg');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+/* FORUM */
+.cardForum:hover{
+    border-color: #0d6efd;
+}
+
+.cardForum{
+    cursor:pointer;
+}
+
+/*LOGIN*/
+.loginBackground{
+    background-image: url('img/background1.jpg');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.loginForm{
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+}
