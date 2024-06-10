@@ -141,10 +141,10 @@
          
             <div id="Topics">
         <?php
-        // $sql = " SELECT * FROM discussion ORDER BY Date DESC";
-        // $result = $conn->query($sql);
-        // if ($result->num_rows > 0) {
-        //     while($row = $result->fetch_assoc()) {
+        $sql = " SELECT * FROM discussion ORDER BY Date DESC";
+        $result = $conn->query($sql);
+        if ($result->num_rows > 0) {
+            while($row = $result->fetch_assoc()) {
         ?>
 
             <a href="topic.php?topic=<?=$row["DID"]?>" class="link-underline link-underline-opacity-0">
@@ -160,9 +160,9 @@
             </a>
 
         <?php
-        //     }
-        // }
-        // ?>
+            }
+        }
+        ?>
 
             </div>
 
