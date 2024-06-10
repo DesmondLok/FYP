@@ -70,7 +70,7 @@ $error = $_GET['error'];
 })()
 
 var error = '<?=$error?>';
- if(error == 0){
+ if(error != ""){
     document.getElementById("eMessage").innerHTML= error;
  }
  
