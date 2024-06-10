@@ -27,7 +27,7 @@
 
                 <div class="h1 text-center">How to evacuate safely</div>
                 <ol class="ps-3 ">
-                    <li>When you hear a fire alarm, take it seriously. Stay calm and focused and leave Immediately.</li>
+                    <li>When you hear a fire alarm, take it seriously. Stay calm and focused and leave immediately.</li>
                     <li>Exit the building as quickly as possible.</li>
                     <li>Move away from the building and assist anyone who needs help evacuating.</li>
                     <li>Head and gather at the designated assembly point. </li> 
