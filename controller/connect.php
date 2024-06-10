@@ -1,21 +1,27 @@
 <?php
-$servername = "sql110.infinityfree.com";
-$username = "if0_36586064";
-$password = "r4O2mgMwnNd2sY8";
-$dbname = "if0_36586064_forum";
+// $servername = "sql110.infinityfree.com";
+// $username = "if0_36586064";
+// $password = "r4O2mgMwnNd2sY8";
+// $dbname = "if0_36586064_forum";
 
-// Create connection
+// // Create connection
+// $conn = new mysqli($servername, $username, $password, $dbname );
+
+// // Check connection
+// if ($conn->connect_error) {
+//   die("Connection failed: " . $conn->connect_error);
+// }
+
+$host = 'evacuation.mysql.database.azure.com';
+$username = 'khanghuai';
+$password = '7z5x4c9v0B';
+$db_name = 'evacuation_fyp';
+
 $conn = new mysqli($servername, $username, $password, $dbname );
 
-// Check connection
 if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-
-// $host = 'evacuation.mysql.database.azure.com';
-// $username = 'khanghuai';
-// $password = '7z5x4c9v0B';
-// $db_name = 'evacuation_fyp';
+    die("Connection failed: " . $conn->connect_error);
+  }
 
 // //Initializes MySQLi
 // $conn = mysqli_init();
