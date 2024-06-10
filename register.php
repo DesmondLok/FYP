@@ -1,4 +1,7 @@
 <?php include "header.php";?>
+<?
+$error = $_GET['error'];
+?>
 
 <div class="container-fluid  p-0">
     <!-- BACKGROUND -->
@@ -8,6 +11,7 @@
     <div class="col-md-4 col-12 p-3 loginForm position-absolute top-50 start-50 translate-middle">
         <form method="POST" action="controller/RegisterController.php" class="d-flex flex-column m-3 needs-validation" novalidate>
             <h2 class="text-white">REGISTRATION</h2>
+            <div class="text-danger mb-1" id="eMessage"></div>
             <div class="mb-3">
                 <input type="email" id="Email" name="Email" class="form-control" placeholder="Email" required>
                 <div class="invalid-feedback">
@@ -64,6 +68,15 @@
     }, false)
   })
 })()
+
+var error = '<?=$error?>';
+ if(error == 0){
+    document.getElementById("eMessage").innerHTML= error;
+ }
+ 
+ if(error == ""){
+    document.getElementById("eMessage").innerHTML= "";
+ }
 </script>
 
 </html>
