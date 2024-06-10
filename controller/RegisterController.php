@@ -1,5 +1,5 @@
 <?php
-
+ob_start();
 include("connect.php");
 
 function checkExist($conn, $Email){
