@@ -76,7 +76,12 @@
 
         <!-- Simlator -->
         <div class="tab-pane fade" id="pills-simulation" role="tabpanel" aria-labelledby="pills-simulation-tab">
-            <!-- <iframe src="" frameborder="0"></iframe> -->
+
+            <div class="ratio ratio-16x9"> 
+                <iframe src="img/simulation.mp4" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            
             <?php include "LG_evacuation_model.html"?>
         </div>
 
