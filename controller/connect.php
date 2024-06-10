@@ -2,7 +2,7 @@
 $servername = "evacuation.mysql.database.azure.com";
 $username = "khanghuai";
 $password = "7z5x4c9v0B";
-$dbname = "evacuation";
+$dbname = "evacuation_fyp";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname );
