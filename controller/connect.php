@@ -1,21 +1,21 @@
 <?php
-// $servername = "localhost";
-// $username = "root";
-// $password = "";
-// $dbname = "evacuation_fyp";
+$servername = "evacuation.mysql.database.azure.com";
+$username = "khanghuai";
+$password = "7z5x4c9v0B";
+$dbname = "evacuation";
 
-// // Create connection
-// $conn = new mysqli($servername, $username, $password, $dbname );
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname );
 
-// // Check connection
-// if ($conn->connect_error) {
-//   die("Connection failed: " . $conn->connect_error);
-// }
-// echo "
-//     <script>
-//         console.log('Database Connected successfully');
-//     </script>
-// ";
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+echo "
+    <script>
+        console.log('Database Connected successfully');
+    </script>
+";
 
 
 function getUsername($conn, $Uid){
