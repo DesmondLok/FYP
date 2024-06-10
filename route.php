@@ -78,7 +78,7 @@
         <div class="tab-pane fade" id="pills-simulation" role="tabpanel" aria-labelledby="pills-simulation-tab">
 
             <div class="ratio ratio-16x9"> 
-                <iframe src="img/simulation.mp4" frameborder="0" allowfullscreen></iframe>
+                <iframe src="img/LGsimulation.mp4" frameborder="0" allowfullscreen></iframe>
             </div>
 
             
