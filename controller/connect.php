@@ -5,7 +5,10 @@ $password = "7z5x4c9v0B";
 $dbname = "evacuation_fyp";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname );
+// $conn = new mysqli($servername, $username, $password, $dbname );
+
+$conn = mysqli_init();
+mysqli_real_connect($conn, "evacuation.mysql.database.azure.com", "khanghuai", "7z5x4c9v0B", "evacuation_fyp", 3306);
 
 // Check connection
 if ($conn->connect_error) {
