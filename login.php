@@ -25,7 +25,7 @@ $login = $_GET['login'];
             </div>
             
             
-            <button type="submit"  class="btn btn-primary mb-3">Login</button>
+            <button type="submit"  class="btn btn-primary mb-3" name="submit" value="login">Login</button>
 
             <div class="d-flex justify-content-between">
               <a href="#" class="text-white">Forgot Password</a>

@@ -107,9 +107,28 @@
             $username = getUsername($conn, $_SESSION["Uid"]);
         ?>
             <div class="row justify-content-between mt-3">
-                <div class="fs-3 fw-semibold col-sm-3 mb-3 text-sm-start" style="text-align:center"><?=$username;?></div>
+                <div class="col-sm-6">
+                    <div class="row justify-content-start">
 
-                <div class="col">
+                        <div class="fs-2 fw-semibold col-sm-3 mb-3 text-center" >
+                            <h2><?=$username;?></h2>
+                        </div>
+
+                        <div class="col-sm-3 mb-3">
+                            <form method="post" action="controller/loginController.php">
+                                <button type="submit" name="submit" value="logout" class="btn btn-danger w-100"  >
+                                    Log out
+                                </button>
+                            </form>
+                            
+                        </div>
+
+                    </div>
+                    
+                </div>
+                
+
+                <div class="col-sm-6">
                     <div class="row justify-content-end">
                         <!-- Button trigger modal -->
                         <div class="col-sm-3 mb-3">

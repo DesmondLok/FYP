@@ -21,7 +21,7 @@ function getUser($conn, $Email){
 //     }
 // }
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "POST" && $_POST['submit'] == "login") {
     if(isset($_POST["Email"], $_POST["Password"])) {
         // $Username = $_POST["Username"];
         // $Password = $_POST["Password"];
@@ -50,3 +50,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
+
+if ($_SERVER["REQUEST_METHOD"] == "POST" && $_POST['submit'] == "logout") { 
+    unset($_SESSION['Uid']);
+    header("Location: ../forum.php");
+}
