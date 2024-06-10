@@ -1,6 +1,6 @@
 <?php
 $servername = "evacuation.mysql.database.azure.com";
-$username = "evacuation";
+$username = "khanghuai";
 $password = "7z5x4c9v0B";
 $dbname = "evacuation_fyp";
 
